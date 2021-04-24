@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <!-- Had a form which inputed the user's name and displayed the users name but just wanted to keep it simple for now-->
+    <h1 class="name">User's Todo List</h1>
+</header>
+<form class="task-form">
+    <input type="text" class="task-input">
+    <button class="task-button">
+        <i class="fas fa-plus"></i>
+    </button>
+    <div class="select">
+        <select name="tasks" id="filter-tasks">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
+        <a class="dropdown">
+        <i class="fas fa-caret-down"></i>
+        </a>
+    </div>
+</form>
+<span class="error"></span>
+<div class="container">
+    <ul class="collection"></ul>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

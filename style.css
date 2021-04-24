@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+    font-family: Poppins, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+.name {
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px #ff6f47;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    background: white;
+    height: 42px;
+    box-shadow: 5px 5px 10px #757575;
+}
+form input {
+    border-radius: 10px 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+}
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.4s ease;
+    margin: 0 15px 0 0;
+}
+form button:hover {
+    color: white;
+    background: #d88771;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collection {
+    list-style: none;
+    min-width: 30%;
+}
+.task {
+    min-width: 20%;
+    margin: 0.5rem;
+    display: flex;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    transition: all 0.5s ease;
+}
+.task li {
+    flex-grow: 1;
+    padding: 5px 10px 5px 10px;
+    /*flex-basis: 100%;*/
+}
+.delete-btn, .complete-btn {
+    background: #ff6f47;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.delete-btn {
+    border-radius: 0 10px 10px 0;
+}
+.complete-btn {
+    background: rgb(85, 181, 85);
+}
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+.task.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.task.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+/* The pain to add a simple space */
+.error-msg {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 35%;
+    width: 170px;
+    padding: 0;
+    transform: translateY(-2rem);
+}
+select {
+    outline: none;
+    border: none;
+    margin: 0 0 0 10px;
+    border-radius: 5px;
+    padding: 4px 0 4px 5px;
+    appearance: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.select {
+    position: relative;
+    overflow: hidden;
+}
+.dropdown{
+    background: #ff6f47;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    color: white;
+    height: 2rem;
+    width: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    pointer-events: none;
+}
